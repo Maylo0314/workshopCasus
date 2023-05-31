@@ -1,0 +1,16 @@
+body{
+    margin: 20px;
+    background-color: #2b3035;
+}
+
+.mb-3{
+    width: 400px;
+}
+
+.form-label{
+    color: white;
+}
+
+h2{
+    color: white;
+}
