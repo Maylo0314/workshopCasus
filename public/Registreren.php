@@ -25,17 +25,23 @@
         <input type="email" class="form-control" id="exampleInputtext2" name="email" required>
     </div>
     <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Gender</label>
-        <input  class="form-control" id="exampleInputtext2" name="gender" required>
+        <label for="exampleInputPassword1" class="form-label">Activiteit1</label>
+        <input  class="form-control" id="exampleInputtext2" name="activiteit1" required>
     </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Activiteit2</label>
+        <input  class="form-control" id="exampleInputtext2" name="activiteit2" required>
+    </div>
+
     <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Telefoonnummer</label>
         <input type="text" class="form-control" id="exampleInputtext2" name="nummer" required>
     </div>
-
-    <label for="exampleInputPassword1" class="form-label">Geboortedatum</label> 
-        <br>
-        <input class="datumcss bc" type="date" name="geboortedatum" required>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Omschrijving activiteiten</label>
+        <input type="text" class="form-control" id="exampleInputtext2" name="omschrijving" required>
+    </div>
         <br>
         <br>
     <button type="submit" href="index.php" class="btn btn-primary buttonkleur" name="login">klant aanmaken</button>
@@ -44,7 +50,6 @@
     <br>
 
     <a href="Index.php" class="btn btn-primary buttonkleur">Bijhoud pagina</a>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html> 
