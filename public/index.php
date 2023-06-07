@@ -17,7 +17,26 @@
 
 <a href="Registreren.php" class="btn btn-primary buttonkleur">klanten aanmaken</a>
 
+<br>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<?php
+require_once('C:\xampp\htdocs\php\workshop_periode1\source\databaseFunctions.php');
+session_start();
+
+$klanten = execute_query("SELECT voornaam, achternaam, email, activiteit1, activiteit2, nummer FROM klanten1");
+
+while($klant = $klanten->fetch_assoc()){
+echo "<br>";
+    echo "<h6 class = wit> Voornaam " . $klant["voornaam"] . "</h6>";
+    echo "<h6 class = wit> Achternaam: " . $klant["achternaam"] . "</h6>";
+    echo "<h6 class = wit> Email: " . $klant["email"] . "</h6>";
+    echo "<h6 class = wit> Activiteit1: " . $klant["activiteit1"] . "</h6>";
+    echo "<h6 class = wit> Activiteit2: " . $klant["activiteit2"] . "</h6>";
+    echo "<h6 class = wit> Nummer: " . $klant["nummer"] . "</h6>";
+}
+?>
 
