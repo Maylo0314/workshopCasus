@@ -11,9 +11,8 @@ require_once ('C:\xampp\htdocs\php\workshop_periode1\source\databaseFunctions.ph
         $activiteit1 = $_POST['activiteit1'];
         $activiteit2 = $_POST['activiteit2'];
         $nummer = $_POST['nummer'];
-        $omschrijving = $_POST['omschrijving'];
 
-        $query = "INSERT INTO klanten1(voornaam, achternaam, email,  activiteit1, activiteit2, nummer, omschrijving) VALUES('$voornaam', '$achternaam', '$email', '$activiteit1', '$activiteit2', '$nummer', $omschrijving)";
+        $query = "INSERT INTO klanten1(voornaam, achternaam, email, activiteit1, activiteit2, nummer) VALUES('$voornaam', '$achternaam', '$email', '$activiteit1', '$activiteit2', '$nummer')";
         
         $result = execute_query($query);
         if ($result)

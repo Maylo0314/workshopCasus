@@ -38,11 +38,6 @@
         <label for="exampleInputPassword1" class="form-label">Telefoonnummer</label>
         <input type="text" class="form-control" id="exampleInputtext2" name="nummer" required>
     </div>
-    <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Omschrijving activiteiten</label>
-        <input type="text" class="form-control" id="exampleInputtext2" name="omschrijving" required>
-    </div>
-        <br>
         <br>
     <button type="submit" href="index.php" class="btn btn-primary buttonkleur" name="login">klant aanmaken</button>
 
